@@ -1,13 +1,6 @@
-<div class="text-layout">
-    <h1>{{ nombre | titlecase }}</h1>
-    <h1>{{ valor | number }}</h1>
-</div>
+<app-menu></app-menu>
 
-<button pButton
-        styleClass="p-button-help"
-        icon="pi pi-undo"
-        iconPos="right"
-        (click)="mostrarNombre()"
-        label="Cambiar nombre"
-        >
-</button>
+<router-outlet></router-outlet> 
+
+
+<a routerLink="no-comunes">Ir a no comunes</a>
